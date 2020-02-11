@@ -3,18 +3,19 @@
 
 char hanzi[20][20]={"零","一","二","三","四","五","六","七","八","九","十"}; 
 
-int num(char d[]){
-    if(strlen(d)==2){
-        return hzhuans(d); 
-    }
-}
-
 int hzhuans(char d[]){
     int i;
     for(i=0;i<11;i++){
         if(!strcmp(hanzi[i],d)){
             return i;
         }
+    }
+}
+
+
+int num(char d[]){
+    if(strlen(d)==2){
+        return hzhuans(d); 
     }
 }
 
