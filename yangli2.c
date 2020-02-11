@@ -3,6 +3,15 @@
 
 char hanzi[20][20]={"零","一","二","三","四","五","六","七","八","九","十"}; 
 
+int hzhuans(char d[]){
+    int i;
+    for(i=0;i<11;i++){
+        if(!strcmp(hanzi[i],d)){
+            return i;
+        }
+    }
+}
+
 int num(char d[]){
 	 if(strlen(d)==2)
         return hzhuans(d); 
@@ -12,14 +21,7 @@ int num1(char f[]){
         return hzhuans(f); 
 }
 
-int hzhuans(char d[]){
-    int i;
-    for(i=0;i<11;i++){
-        if(!strcmp(hanzi[i],d)){
-            return i;
-        }
-    }
-}
+
 
 int jiafa(int x,char c[]){
     
