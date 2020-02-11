@@ -12,6 +12,7 @@ int hzhuans(char d[]){
     }
 }
 
+
 int num(char d[]){
 	 if(strlen(d)==2)
         return hzhuans(d); 
@@ -20,7 +21,6 @@ int num1(char f[]){
 	 if(strlen(f)==2)
         return hzhuans(f); 
 }
-
 
 
 int jiafa(int x,char c[]){
@@ -62,9 +62,14 @@ int main(){
 
     while(scanf("%s %s",a,b)!=EOF){
 		if(strcmp(a,"看看")==0){
+			if(strcmp(b,"小杨年龄")==0){
+                printf("%s\n",hanzi[age]);
+			}
 			printf("\n");
-		    printf("%s\n",hanzi[money]);
-		    return 0;
+		    if(strcmp(b,"小杨零花钱")==0){
+		        printf("%s\n",hanzi[money]);
+		        return 0;
+			}
 		}
 		else if(strcmp(a,"如果")==0){
 		     scanf("%s %s %s %s %s %s %s %s",c,d,e,f,g,h,i,j);
@@ -90,4 +95,3 @@ int main(){
 }
  
   
-
