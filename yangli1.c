@@ -12,7 +12,6 @@ int hzhuans(char d[]){
     }
 }
 
-
 int num(char d[]){
     if(strlen(d)==2){
         return hzhuans(d); 
@@ -55,8 +54,11 @@ int main(){
            if(strcmp(b,"减少")==0){
                sum=jianfa(sum,c); 
 		   }
+
 	   }
        else{
+		    printf("\n"); 
+            printf("%s\n",hanzi[sum]);
 		    scanf("%s %s %s %s %s %s %s %s %s %s",a,b,c,d,e,f,g,h,i,j);
             printf("\n");  
 			printf("%s\n",hanzi[sum]);
@@ -70,6 +72,3 @@ int main(){
    return 0;       
 }
  
-
- 
-
