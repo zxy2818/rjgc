@@ -46,7 +46,7 @@ int main(){
     sum=num(d);
 
     while(scanf("%s %s",a,b)!=EOF){
-       if(strcmp(a,"看看")){
+       if(strcmp(a,"气温")==0){
 		   scanf("%s",c); 
 		   if(strcmp(b,"增加")==0){
 			   sum=jiafa(sum,c);
@@ -54,13 +54,13 @@ int main(){
            if(strcmp(b,"减少")==0){
                sum=jianfa(sum,c); 
 		   }
-
 	   }
-       else{
+	   else if(strcmp(a,"看看")==0){
+		   printf("%s\n",hanzi[sum]);
+	   }
+       else if(strcmp(a,"如果")==0){
+		    scanf("%s %s %s %s %s %s %s %s",c,d,e,f,g,h,i,j);
 		    printf("\n"); 
-            printf("%s\n",hanzi[sum]);
-		    scanf("%s %s %s %s %s %s %s %s %s %s",a,b,c,d,e,f,g,h,i,j);
-            printf("\n");  
 			printf("%s\n",hanzi[sum]);
 		    if(sum>8)
 			    printf("你好,世界\n");
