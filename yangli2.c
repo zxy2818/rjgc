@@ -54,8 +54,8 @@ int main(){
     printf("请输入:\n");
 	printf("\n");
 
-    scanf("%s %s %s %s",a,b,c,d);//整数 小杨年龄 等于 八
-	scanf("%s %s %s %s",a,e,c,f);//整数 小杨零花钱 等于 二
+    scanf("%s %s %s %s",a,b,c,d);
+	scanf("%s %s %s %s",a,e,c,f);
 
     age=num(d);
 	money=num1(f);
@@ -65,20 +65,18 @@ int main(){
 			if(strcmp(b,"小杨年龄")==0){
                 printf("%s\n",hanzi[age]);
 			}
-			printf("\n");
 		    if(strcmp(b,"小杨零花钱")==0){
-		        printf("%s\n",hanzi[money]);
-		        return 0;
+		         printf("%s\n",hanzi[money]);
 			}
 		}
 		else if(strcmp(a,"如果")==0){
 		     scanf("%s %s %s %s %s %s %s %s",c,d,e,f,g,h,i,j);
 			 if(age>8){
-		         money=jiafa1(money,h); 
+		        money=jiafa1(money,h); 
 			 }
 			 else{
-				 money=money;
-			 }
+				money=money;
+			 } 
 		}
         else if(strcmp(a,"小杨年龄")==0){
 			scanf("%s",c); 
@@ -89,8 +87,7 @@ int main(){
                age=jianfa(age,c); 
 			}
 		}
-	}
-	
+	}	
    return 0;       
 }
  
