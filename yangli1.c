@@ -30,8 +30,7 @@ int jianfa(int x,char c[]){
 
     int y;
 	y=num(c);
-	return x-y;
-    
+	return x-y;   
 }
 
 
