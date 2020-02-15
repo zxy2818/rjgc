@@ -12,7 +12,6 @@ int hzhuans(char d[]){
     }
 }
 
-
 int num(char d[]){
 	 if(strlen(d)==2)
         return hzhuans(d); 
